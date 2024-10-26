@@ -13,7 +13,8 @@
   [[module.imports]]
     path = "github.com/schnerring/hugo-theme-gruvbox"
   [[module.imports]]
-    path = "github.com/schnerring/hugo-mod-json-resume"
+    # path = "github.com/schnerring/hugo-mod-json-resume"
+    path = ".././hugo-mod-json-resume"
     [[module.imports.mounts]]
       # This will add the sample Richard Hendricks CV data
       source = "data"
@@ -56,3 +57,17 @@
     # Add hugo_stats.json to Hugo's server watcher
     source = "hugo_stats.json"
     target = "assets/watching/hugo_stats.json"
+
+[params]
+  [params.prism]
+    languages = [
+      "markup",
+      "css",
+      "clike",
+      "javascript"
+    ]
+    plugins = [
+      "normalize-whitespace",
+      "toolbar",
+      "copy-to-clipboard"
+    ]

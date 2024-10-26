@@ -13,7 +13,7 @@
   [[module.imports]]
     path = "github.com/schnerring/hugo-theme-gruvbox"
   [[module.imports]]
-    path = "github.com/schnerring/hugo-mod-json-resume"
+    path = ".././hugo-mod-json-resume"
     [[module.imports.mounts]]
       # This will add the sample Richard Hendricks CV data
       source = "data"
