@@ -89,6 +89,8 @@
 
 
   <meta itemprop="description" content="A retro-looking Hugo theme inspired by gruvbox. The pastel colors are high contrast, easily distinguishable, pleasing to the eye, and feature light and dark color palettes.">
+  <meta itemprop="datePublished" content="2022-04-26T01:16:18+02:00">
+  <meta itemprop="dateModified" content="2022-04-26T01:16:18+02:00">
 
 
 
@@ -1830,10 +1832,6 @@ aside.toc ul {
           <a href="/cv">CV</a>
         </li>
       
-        <li class="menu__item">
-          <a href="/about">About</a>
-        </li>
-      
     </ul>
 
     <div class="menu__burger">
@@ -1870,10 +1868,6 @@ aside.toc ul {
         
           <li>
             <a class="menu__item" href="/cv">CV</a>
-          </li>
-        
-          <li>
-            <a class="menu__item" href="/about">About</a>
           </li>
         
       </ul>
@@ -1935,6 +1929,386 @@ aside.toc ul {
   
   
   
+  <article class="post">
+    <div class="post-header">
+      <h2>
+        <a href="/blog/embed-video-files/">Embed Video Files</a>
+      </h2>
+      <div class="post-meta"><span>2022-04-26</span>
+
+  
+</div>
+
+    </div>
+
+    <div class="post-content">
+      
+        <p>Use the <a
+  href="https://github.com/schnerring/hugo-theme-gruvbox/blob/main/layouts/shortcodes/video.html"
+  
+  
+    class="link--external" target="_blank" rel="noreferrer"
+  
+>video shortcode</a>
+to embed your video files from <a
+  href="https://gohugo.io/content-management/page-resources/"
+  
+  
+    class="link--external" target="_blank" rel="noreferrer"
+  
+>Hugo Page Resources</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <video
+    autoplay
+    
+    
+    loop
+    
+    poster="/blog/embed-video-files/my-video.jpg"
+    
+    
+    playsinline
+  ><source src="/blog/embed-video-files/my-video.mp4" type="video/mp4" /><source src="/blog/embed-video-files/my-video.webm" type="video/webm" /></video>
+        
+          <div class="post-content__read-more">
+            <a href="/blog/embed-video-files/">Read more &gt;</a>
+          </div>
+        
+      
+    </div>
+  </article>
+
+  <article class="post">
+    <div class="post-header">
+      <h2>
+        <a href="/blog/image-optimization/">Image Optimization</a>
+      </h2>
+      <div class="post-meta"><span>2021-10-16</span>
+
+  
+    
+    
+    
+
+  <figure>
+
+
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+      
+        
+          
+          
+        
+        
+        
+        
+          
+          
+          
+        
+      
+    
+      
+        
+          
+          
+        
+        
+        
+        
+          
+          
+          
+        
+      
+    
+      
+        
+          
+        
+        
+        
+        
+          
+          
+          
+        
+      
+    
+
+
+    <picture>
+      <source
+        type="image/webp"
+        srcset="/blog/image-optimization/alexandre-van-thuan-mr9FouttLGY-unsplash_hu14596371932480851254.webp 300w,/blog/image-optimization/alexandre-van-thuan-mr9FouttLGY-unsplash_hu10749940297144803932.webp 500w,/blog/image-optimization/alexandre-van-thuan-mr9FouttLGY-unsplash_hu15808755486164513419.webp 700w"
+        sizes="(max-width: 499px) 300px,(max-width: 699px) 500px,700px"
+      />
+      <img
+        src="/blog/image-optimization/alexandre-van-thuan-mr9FouttLGY-unsplash.jpg"
+        srcset="/blog/image-optimization/alexandre-van-thuan-mr9FouttLGY-unsplash_hu12191224665641417859.jpg 300w,/blog/image-optimization/alexandre-van-thuan-mr9FouttLGY-unsplash_hu15074541793951764931.jpg 500w,/blog/image-optimization/alexandre-van-thuan-mr9FouttLGY-unsplash_hu13320891613048707427.jpg 700w"
+        sizes="(max-width: 499px) 300px,(max-width: 699px) 500px,700px"
+        alt="The interior of Stadsbiblioteket in Stockholm - Gunnar Asplunds library from 1928. The architecture is a transition between neoclassicism and functionalism."
+        title="By Alexandre Van Thuan"
+        
+        width="4553"
+        height="3419"
+      />
+    </picture>
+  
+
+
+
+
+
+    <figcaption>By <a
+  href="https://unsplash.com/photos/mr9FouttLGY"
+  
+  
+    class="link--external" target="_blank" rel="noreferrer"
+  
+>Alexandre Van Thuan</a></figcaption>
+  </figure>
+
+
+  
+</div>
+
+    </div>
+
+    <div class="post-content">
+      
+        <p>The theme optimizes images by default with a custom
+<a
+  href="https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks"
+  
+  
+    class="link--external" target="_blank" rel="noreferrer"
+  
+>Hugo&rsquo;s markdown render hook</a>:</p>
+<ul>
+<li>The theme creates resized versions for each image, ranging from 100 to 700
+pixels wide.</li>
+<li>It generates <a
+  href="https://en.wikipedia.org/wiki/WebP"
+  
+  
+    class="link--external" target="_blank" rel="noreferrer"
+  
+>WebP</a> versions for each size
+if the original image format isn&rsquo;t WebP.</li>
+<li>The theme keeps the original file format as a fallback for browsers that
+<a
+  href="https://caniuse.com/webp"
+  
+  
+    class="link--external" target="_blank" rel="noreferrer"
+  
+>don&rsquo;t support the WebP format</a>.</li>
+<li>Images in SVG format are embedded as-is.</li>
+</ul>
+<h2 id="blog-post-cover-images">Blog Post Cover Images<a href="#blog-post-cover-images" class="post-heading__anchor" aria-hidden="true">#</a>
+</h2>
+<p>Use the <a
+  href="https://gohugo.io/content-management/front-matter/"
+  
+  
+    class="link--external" target="_blank" rel="noreferrer"
+  
+>front matter</a> of
+your posts to add cover images:</p>
+        
+          <div class="post-content__read-more">
+            <a href="/blog/image-optimization/">Read more &gt;</a>
+          </div>
+        
+      
+    </div>
+  </article>
+
+  <article class="post">
+    <div class="post-header">
+      <h2>
+        <a href="/blog/prism-code-highlighting-showcase/">Prism Code Highlighting Showcase</a>
+      </h2>
+      <div class="post-meta"><span>2021-07-28</span>
+
+  
+</div>
+
+    </div>
+
+    <div class="post-content">
+      
+        <p>This theme uses <a
+  href="https://prismjs.com/"
+  
+  
+    class="link--external" target="_blank" rel="noreferrer"
+  
+>Prism</a> for code highlighting. Other Hugo
+themes usually include a pre-configured version of Prism, which complicates
+updates and clutters the source code base with third-party JavaScript.</p>
+<p>Only the Prism features you select in the Hugo site configuration are bundled by
+the build process. This way, Prism can be easily updated with <code>npm</code> and the size
+of the JavaScript and CSS bundles are minimized by only including what you need.</p>
+        
+          <div class="post-content__read-more">
+            <a href="/blog/prism-code-highlighting-showcase/">Read more &gt;</a>
+          </div>
+        
+      
+    </div>
+  </article>
+
+  <article class="post">
+    <div class="post-header">
+      <h2>
+        <a href="/blog/markdown-syntax/">Markdown Syntax Guide</a>
+      </h2>
+      <div class="post-meta"><span>2019-03-11</span><span> by </span><span class="post-meta__author">Hugo Authors</span>
+    <div class="post-tags">
+      <a class="post-tag" href="//localhost:1313/tags/markdown">markdown</a><a class="post-tag" href="//localhost:1313/tags/css">css</a><a class="post-tag" href="//localhost:1313/tags/html">html</a><a class="post-tag" href="//localhost:1313/tags/hugo-basic-example">hugo&#8209;basic&#8209;example</a>
+    </div>
+  
+
+  
+</div>
+
+    </div>
+
+    <div class="post-content">
+      
+        Sample article showcasing basic Markdown syntax and formatting for HTML elements.
+      
+    </div>
+  </article>
+
+  <article class="post">
+    <div class="post-header">
+      <h2>
+        <a href="/blog/rich-content/">Rich Content</a>
+      </h2>
+      <div class="post-meta"><span>2019-03-10</span><span> by </span><span class="post-meta__author">Hugo Authors</span>
+    <div class="post-tags">
+      <a class="post-tag" href="//localhost:1313/tags/shortcodes">shortcodes</a><a class="post-tag" href="//localhost:1313/tags/privacy">privacy</a><a class="post-tag" href="//localhost:1313/tags/hugo-basic-example">hugo&#8209;basic&#8209;example</a>
+    </div>
+  
+
+  
+</div>
+
+    </div>
+
+    <div class="post-content">
+      
+        A brief description of Hugo Shortcodes
+      
+    </div>
+  </article>
+
+  <article class="post">
+    <div class="post-header">
+      <h2>
+        <a href="/blog/placeholder-text/">Placeholder Text</a>
+      </h2>
+      <div class="post-meta"><span>2019-03-09</span><span> by </span><span class="post-meta__author">Hugo Authors</span>
+    <div class="post-tags">
+      <a class="post-tag" href="//localhost:1313/tags/markdown">markdown</a><a class="post-tag" href="//localhost:1313/tags/text">text</a><a class="post-tag" href="//localhost:1313/tags/hugo-basic-example">hugo&#8209;basic&#8209;example</a>
+    </div>
+  
+
+  
+</div>
+
+    </div>
+
+    <div class="post-content">
+      
+        Lorem Ipsum Dolor Si Amet
+      
+    </div>
+  </article>
+
+  <article class="post">
+    <div class="post-header">
+      <h2>
+        <a href="/blog/math-typesetting/">Math Typesetting</a>
+      </h2>
+      <div class="post-meta"><span>2019-03-08</span><span> by </span><span class="post-meta__author">Hugo Authors</span>
+    <div class="post-tags">
+      <a class="post-tag" href="//localhost:1313/tags/hugo-basic-example">hugo&#8209;basic&#8209;example</a>
+    </div>
+  
+
+  
+</div>
+
+    </div>
+
+    <div class="post-content">
+      
+        A brief guide to setup KaTeX
+      
+    </div>
+  </article>
+
+  <article class="post">
+    <div class="post-header">
+      <h2>
+        <a href="/blog/emoji-support/">Emoji Support</a>
+      </h2>
+      <div class="post-meta"><span>2019-03-05</span><span> by </span><span class="post-meta__author">Hugo Authors</span>
+    <div class="post-tags">
+      <a class="post-tag" href="//localhost:1313/tags/emoji">emoji</a><a class="post-tag" href="//localhost:1313/tags/hugo-basic-example">hugo&#8209;basic&#8209;example</a>
+    </div>
+  
+
+  
+</div>
+
+    </div>
+
+    <div class="post-content">
+      
+        Guide to emoji usage in Hugo
+      
+    </div>
+  </article>
+
 
 <div class="pagination">
   

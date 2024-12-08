@@ -26,6 +26,18 @@
                 href="//localhost:1313/de/categories/"
                 />
   </url><url>
+    <loc>//localhost:1313/de/cv/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="//localhost:1313/de/cv/"
+                />
+  </url><url>
     <loc>//localhost:1313/de/tags/</loc>
     <xhtml:link
                 rel="alternate"
