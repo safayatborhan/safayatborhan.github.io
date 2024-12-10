@@ -6,34 +6,27 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Css</title>
-      <link>//localhost:1313/tags/css/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/css/</guid>
+      <title>ASP.NET</title>
+      <link>//localhost:1313/tags/asp.net/</link>
+      <pubDate>Sat, 18 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/asp.net/</guid>
       <description></description>
     </item>
     <item>
-      <title>Html</title>
-      <link>//localhost:1313/tags/html/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/html/</guid>
+      <title>Web Service</title>
+      <link>//localhost:1313/tags/web-service/</link>
+      <pubDate>Sat, 18 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/web-service/</guid>
       <description></description>
     </item>
     <item>
-      <title>Hugo-Basic-Example</title>
-      <link>//localhost:1313/tags/hugo-basic-example/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/hugo-basic-example/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Markdown</title>
-      <link>//localhost:1313/tags/markdown/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/markdown/</guid>
+      <title>WinForm</title>
+      <link>//localhost:1313/tags/winform/</link>
+      <pubDate>Sat, 18 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/winform/</guid>
       <description></description>
     </item>
   </channel>
