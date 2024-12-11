@@ -33,7 +33,8 @@
       "style",
       "svg",
       "title",
-      "ul"
+      "ul",
+      "video"
     ],
     "classes": [
       "bio",
@@ -44,6 +45,7 @@
       "highlight",
       "icon",
       "icon-tabler",
+      "icon-tabler-mail",
       "icon-tabler-menu-2",
       "icon-tabler-moon",
       "icon-tabler-sun",
@@ -109,6 +111,9 @@
       "search",
       "search__suggestions--hidden",
       "sidebar",
+      "social-share",
+      "social-share__heading",
+      "social-share__item",
       "theme__toggle"
     ],
     "ids": [

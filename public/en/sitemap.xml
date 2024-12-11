@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -15,29 +15,26 @@
                 href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:1313/tags/asp.net-mvc/</loc>
-    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/blog/</loc>
-    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/c/</loc>
-    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/tags/csharp/</loc>
+    <lastmod>2017-10-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/crud-angularjs-asp.net-mvc-entity-framework/</loc>
-    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/tags/custom-map/</loc>
+    <lastmod>2017-10-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/dropdownlist/</loc>
-    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/tags/geolocation/</loc>
+    <lastmod>2017-10-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/localdb/</loc>
-    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/tags/google-map/</loc>
+    <lastmod>2017-10-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/microsoft-access/</loc>
-    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/blog/google-map-in-xamarin.forms/</loc>
+    <lastmod>2017-10-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
-    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -49,13 +46,31 @@
                 href="//localhost:1313/tags/"
                 />
   </url><url>
+    <loc>//localhost:1313/tags/xamarin/</loc>
+    <lastmod>2017-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/unity-2d-player-movement/</loc>
+    <lastmod>2017-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/angularjs/</loc>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/asp.net-mvc/</loc>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/crud/</loc>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/crud-angularjs-asp.net-mvc-entity-framework/</loc>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/entity-framework/</loc>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/asp.net/</loc>
     <lastmod>2015-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/blog/gridview-customization/</loc>
-    <lastmod>2015-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/c%23/</loc>
     <lastmod>2015-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/gridview/</loc>
@@ -63,6 +78,15 @@
   </url><url>
     <loc>//localhost:1313/tags/webform/</loc>
     <lastmod>2015-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/dropdownlist/</loc>
+    <lastmod>2015-06-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/localdb/</loc>
+    <lastmod>2015-06-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/microsoft-access/</loc>
+    <lastmod>2015-06-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/blog/populate-asp.net-dropdownlist/</loc>
     <lastmod>2015-06-09T00:00:00+00:00</lastmod>
