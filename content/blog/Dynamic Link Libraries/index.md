@@ -6,7 +6,7 @@ description = "Explanation of Dynamic Link Libraries (DLLs) by creating a DLL li
 tags = [
     "DLL",
     "WinForm",
-    "C#",
+    "csharp",
     "C++"
 ]
 +++

@@ -6,8 +6,22 @@
     <description>Recent content on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Map In Xamarin.Forms</title>
+      <link>//localhost:1313/blog/google-map-in-xamarin.forms/</link>
+      <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/google-map-in-xamarin.forms/</guid>
+      <description>&lt;p&gt;Google Maps Service is very popular in various enterprise-level mobile applications. I will discuss here how to use Google Maps in Xamarin.Forms and customize it using custom renderer for further functionality. So, let’s create a Xamarin.Forms project in Visual Studio under Visual C# and cross-platform, and name it as GoogleMapUsingXamarinForms.&lt;/p&gt;&#xA;&lt;p&gt;Let’s start with the basics. First of all, we will see how to obtain the latitude and longitude using the mobile&amp;rsquo;s GPS. And then, we will use the coordinates in the Google Maps to show the exact current location. In this project, we will use C# for both, design and coding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CRUD with AngularJs, ASP.NET MVC 5 and Entity Framework</title>
+      <link>//localhost:1313/blog/crud-angularjs-asp.net-mvc-entity-framework/</link>
+      <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/crud-angularjs-asp.net-mvc-entity-framework/</guid>
+      <description>&lt;p&gt;In this article, I will demonstrate how we can use AngularJs with ASP.net mvc. Here, we will learn about CRUD functionality by AngularJs and ASP.net mvc 5 with entity framework code first approach. We will learn some basics of asp.net identity, configure them, and very simple uses of them.&lt;/p&gt;&#xA;&lt;h2 id=&#34;step-1&#34;&gt;Step 1&lt;a href=&#34;#step-1&#34; class=&#34;post-heading__anchor&#34; aria-hidden=&#34;true&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;If we want to use angularjs in our mvc application, first we have to download the angular.js file from &lt;a&#xA;  href=&#34;https://angularjs.org/&#34;&#xA;  &#xA;  &#xA;    class=&#34;link--external&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&#xA;  &#xA;&gt;https://angularjs.org/&lt;/a&gt;. Please make sure, you are downloading the 1.2 version of angular because we will use angularjs routing here. The 1.2 version is best for single page routing. Create an asp.net mvc web application project. Copy the angular.js file to the Scripts folder of the project. Create a folder in the project and name it Angular. Add another folder in the Angular folder and name it App. We will write all the angular codes, apps and controllers here. Then add a javascript file and name it app.js. This will be the module of all angular controllers. And then make a folder here and add a javascript file named controllers.js. Now we have to add a bundle to make a connection between the angular codes with asp.net mvc 5. To do so, open BundleConfig.cs which is in the app_start folder in the project. Add a bundle like this:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>ASP.NET WebForm GridView Customization</title>
       <link>//localhost:1313/blog/gridview-customization/</link>
@@ -16,11 +30,25 @@
       <description>&lt;p&gt;In ASP.NET, GridView is one of the most useful tools for developers. Sometimes we need to customize a GridView for various purposes. It&amp;rsquo;s not about visual customization. Assume you need to edit and delete a row from a GridView. What will you do then? Can you find these from the properties or can you get a built-in method from the Library? Or maybe you need to show some image in a column. How will you configure that? The fields generally support strings as far I know. So, you need to configure them to support image extensions so that an image can be shown.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Populate ASP.NET Dropdownlist by Local DB</title>
+      <link>//localhost:1313/blog/populate-asp.net-dropdownlist/</link>
+      <pubDate>Tue, 09 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/populate-asp.net-dropdownlist/</guid>
+      <description>&lt;p&gt;Sometimes we cannot use SQL Server or MySQL with our application because of server problems and data traffic errors in various servers. In that case, if you use Access for the database for your application or web form, it will be less complicated for your application and will reduce server error problems. So, I will show you how to retrieve data and process it by accessing the database with an ASP.NET application. If you use an Access database, there will be no need to install a database engine into another computer to use your application. If there is Microsoft Office installed then you will get no error and can work smoothly thereafter.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Custom DLL and It&#39;s Usage</title>
       <link>//localhost:1313/blog/dynamic-link-libraries/</link>
       <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/blog/dynamic-link-libraries/</guid>
       <description>&lt;p&gt;First of all, we need to understand what Dynamic Link Library (DLL) is. A DLL is something like a library that you make for your own purposes. Such as, in the C language, if you want to use the printf(“”) function, you must #include&amp;lt;stdio.h&amp;gt;. Which is nothing but a library and using this library, you will execute the corresponding functions. As a programmer, sometimes you need to make your own library for various purposes. You can use these libraries in every platform, every language and even every framework. DLLs are like EXEs but they are not executable. A DLL can contain functions, variables, classes, any resources(icons, images, files) and so on. It also can contains COM components and .NET libraries. A program loads a DLL at start-up, via the Win32 API load library.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Send SMS from WinForm Application</title>
+      <link>//localhost:1313/blog/send-sms/</link>
+      <pubDate>Thu, 23 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/send-sms/</guid>
+      <description>&lt;p&gt;For sending SMS messages from your Windows or web form application you will need a web API. There are some websites for API purchase. Some websites provide an API for free. Here I will show you how to use them and sending messages to a mobile network using the API.&lt;/p&gt;&#xA;&lt;h2 id=&#34;step-1&#34;&gt;Step 1&lt;a href=&#34;#step-1&#34; class=&#34;post-heading__anchor&#34; aria-hidden=&#34;true&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I have used a web API from www. clickatell.com. The process is pretty straight forward. First of all, you need to register in the website.&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;    &#xA;    &#xA;    &#xA;    &#xA;    &#xA;    &#xA;      &#xA;    &#xA;    &#xA;&#xA;    &#xA;    &#xA;    &#xA;    &#xA;      &#xA;        &#xA;          &#xA;          &#xA;        &#xA;        &#xA;        &#xA;        &#xA;          &#xA;          &#xA;          &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;          &#xA;          &#xA;        &#xA;        &#xA;        &#xA;        &#xA;          &#xA;          &#xA;          &#xA;        &#xA;      &#xA;    &#xA;      &#xA;    &#xA;      &#xA;        &#xA;          &#xA;        &#xA;        &#xA;        &#xA;        &#xA;          &#xA;          &#xA;          &#xA;        &#xA;      &#xA;    &#xA;&#xA;&#xA;    &lt;picture&gt;&#xA;      &lt;source&#xA;        type=&#34;image/webp&#34;&#xA;        srcset=&#34;//localhost:1313/blog/send-sms/1_hu1140355225649891387.webp 300w,/blog/send-sms/1_hu410403511469082907.webp 500w,/blog/send-sms/1_hu7074591622416546153.webp 624w&#34;&#xA;        sizes=&#34;(max-width: 499px) 300px,(max-width: 699px) 500px,624px&#34;&#xA;      /&gt;&#xA;      &lt;img&#xA;        src=&#34;//localhost:1313/blog/send-sms/1.jpg&#34;&#xA;        srcset=&#34;//localhost:1313/blog/send-sms/1_hu6433767704821518306.jpg 300w,/blog/send-sms/1_hu1707278752684718419.jpg 500w,/blog/send-sms/1_hu18275828220032509594.jpg 624w&#34;&#xA;        sizes=&#34;(max-width: 499px) 300px,(max-width: 699px) 500px,624px&#34;&#xA;        alt=&#34;&#34;&#xA;        &#xA;        loading=&#34;lazy&#34;&#xA;        width=&#34;624&#34;&#xA;        height=&#34;319&#34;&#xA;      /&gt;&#xA;    &lt;/picture&gt;&#xA;  &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>ASP.NET Web Service</title>
