@@ -99,5 +99,24 @@ Different models:
 Decoder Only model is the most popular now a days. gpt is based on decoder only.
 
 
+## Prompting and prompt engineering
 
+**Prompt Engineering**: Sometimes model does not produce the outcome we want on the first try. We may have to revise the language of the prompt several times. 
+This is called prompt engineering. Strategy is to include examples inside the context window. 
+
+**In-context learning (ICL)**:  
+![alt text](image-21.png)
+In this example, we are asking the model the classify the sentiment of this model. That means, review of the movies is positive or negative.
+Larger model can correctly identify the sentiment: 
+![alt text](image-22.png)
+Smaller model (example: GPT-2) will struggle with this below. This is *zero shot inference*.
+![alt text](image-23.png)
+
+Now prompt engineering comes into picture. If we add an example into the model (e.g., I loved this movie and sentiment is positive).
+Then, the model will better chance to understand the sentiment and format of the response. The inclusion of a single example is known as *one shot inference*. 
+![alt text](image-24.png)
+
+Sometimes, a single example won't be enough to the model to learn. We can set multiple example. This is called *few shot inference*. 
+We will add a positive and a negative review to the prompt. 
+![alt text](image-25.png)
 
