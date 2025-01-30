@@ -120,3 +120,71 @@ Sometimes, a single example won't be enough to the model to learn. We can set mu
 We will add a positive and a negative review to the prompt. 
 ![alt text](image-25.png)
 
+
+## Generative configuration - inference parameters
+This configuration helps to configure the model so that, it can accept examples to generate it's words.
+
+### Max new tokens
+A cap on number of times the model will go through the selection process.
+![alt text](image-27.png)
+example:
+![alt text](image-28.png)
+
+So, as you can see, at max_new_token=200, it could not reach to max threshold due to some other constraints.
+Such as, model predicting and end of sequence token. 
+
+The output from the transformer softmax layer, is a probability distribution across the entire dictionary of word.
+Here left side is the probability score.
+![alt text](image-29.png)
+
+*Greedy*: Most LLMs by default operates with greedy decoding. This way the model will always choose the word with 
+highest probability. This method can word very will with short generation but is acceptable with repeated words
+or repeated sequence of words. 
+![alt text](image-30.png)
+
+*Random*: But if you want to generate text that is more natural, more creative and avoids repeating words, you need to use
+random sampling. 
+
+Here, probability of banana is 0.02. So, in random sampling, this is a 2% chance that the word will be selected.
+So, we reduce the likelyhood of the fact that, the word will be repeated. Depending on the settings, there is a 
+possibility that, the output can be too creative. In those scenario, we need to disable greedy and enable random sampling.
+![alt text](image-31.png)
+
+
+### Top K
+
+These helps to limit the random sampling and increase the chance that the output will be sensible. To limit the options, 
+we will still allow some variability. We will specify some top K value which instructs the model to choose from only the k tokens, with
+the highest probability.  
+![alt text](image-32.png)
+In this example, k is set to 3. So, we are restricting the model to choose from these 3 options. Then it selects donut randomly: 
+![alt text](image-33.png)
+
+### Top P
+
+Alternatively, we can use top p to limit the random sampling to prediction, whoose combined probability do not exceed p. For example, if we set 
+p = 0.3, then the options are cake and donut since their cumulative probability is (0.2+0.1) .3 which is equal or less than p. 
+![alt text](image-34.png)
+
+### Temperature
+
+This parameter influences the shape of the probability distribution that the model calcuates for the next token. I.E. the higher the temperature,
+the higher the randomness. The lower the temperature, the lower the randomness. 
+
+Temperature value is a scaling factor that is applied via the final softmax layer that impacts the shape of the probability distribution of the 
+next token. In contrast to the top k and top p parameters, changing the temperature alters the prediction of the model we make.
+
+If we choose a low value of temperature, that is less than 1, the result of probability distribution of softmax layer will be strongly peaked.
+The probability is concentrated into smaller number of words. We can see below in the blue bar, most of the probability here is concentrated on the word cake. 
+The model will select from the distribution using random sampling and the resulting text will be less random and will closely follow the most likely words.  
+![alt text](image-35.png)
+
+Instead, if we set the temperature to a higher value, say greater than 1, then the model will calculate a broader, flatter probability distribution.
+Now the probability is evenly spread across the tokens. This leads the model to generate a higher degree of randomness and more variability in the 
+output compared to cool temperature setting. The text will be more creative. 
+![alt text](image-36.png)
+
+
+## Generative AI Project Lifecycle
+
+![alt text](image-37.png)
