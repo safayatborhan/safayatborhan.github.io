@@ -13,6 +13,7 @@ tags = [
 
 ## Large Language Model
 ![alt text](image.png)
+
 The way we interact with LLM are different than typical programming paradigm. In programming world, we write code, use libraries. In contrast LLM are able to take *natural language* or human written instruction and perform tasks. 
 
 **Prompt**: The text we pass as a human written form.
@@ -22,6 +23,7 @@ The way we interact with LLM are different than typical programming paradigm. In
 **Context Window**: The space or memory that is available to the prompt. Usually limited to few thousands words but that depends on model.
 
 **Completion**: The output.
+
 ![alt text](image-2.png)
 
 ## Transformers
@@ -29,19 +31,27 @@ Generative algorithms are not new. There was an algorithm before called **Recurr
 
 Language is complex. One word can mean lot of thing. 
 ![alt text](image-1.png)
+
 In this example, it's hard to understand the true meaning of this sentence. 
 
 Then **Transformers** architecture has arrived.
+
 ![alt text](image-4.png)
+
 The input need to be tokenized first:
+
 ![alt text](image-5.png)
-After the input is ready, we will pass it to embedding layer. This layer is a trainable vector embedding space. A high dimensional space where each token is represented as a vector and occupies an unique location within that space. Each token id in the vocabulary is matched to a multi dimensional verctor and the vector is learning to encode the meaning and context of individual tokens in the input sequence. 
+
+After the input is ready, we will pass it to embedding layer. This layer is a trainable vector embedding space. A high dimensional space where each token is represented as a vector and occupies an unique location within that space. Each token id in the vocabulary is matched to a multi dimensional vector and the vector is learning to encode the meaning and context of individual tokens in the input sequence. 
 
 ![alt text](image-6.png)
 Here, each word has been matched to a token id and each token is mapped into a vector. Let's imagine a vector size of 3:
 ![alt text](image-7.png)
+
 We can plot the words into a 3 dimensional space and see the relationship between the words. 
+
 ![alt text](image-8.png)
+
 We can calculate the distance between the words as an angle. That is the way it can be understood mathematically. 
 
 As we add the token vector into the base of encoder and decoder, we also need to add positional encoding.  
@@ -52,10 +62,12 @@ The model processes each of the input token in parallel. By adding the positioni
 The model analyzes the relationship between the tokens in input sequence. This allows the model to attend to different parts of the input sequence to better capture the textual dependencies between the words. 
 
 ![alt text](image-11.png)
+
 This simply means multiple heads are learning in parallel. The max number of parallelism is 12-100 and varies from model to model. Each head will learn from different aspect of the language. 
 
 Example: 
 ![alt text](image-12.png)
+
 One head may seem the relationship between people entities in the sentence. 
 
 One head may focus on activies in the sentence. 
@@ -106,6 +118,7 @@ This is called prompt engineering. Strategy is to include examples inside the co
 
 **In-context learning (ICL)**:  
 ![alt text](image-21.png)
+
 In this example, we are asking the model the classify the sentiment of this model. That means, review of the movies is positive or negative.
 Larger model can correctly identify the sentiment: 
 ![alt text](image-22.png)
@@ -138,7 +151,7 @@ Here left side is the probability score.
 ![alt text](image-29.png)
 
 *Greedy*: Most LLMs by default operates with greedy decoding. This way the model will always choose the word with 
-highest probability. This method can word very will with short generation but is acceptable with repeated words
+highest probability. This method can work very well with short generation but is acceptable with repeated words
 or repeated sequence of words. 
 ![alt text](image-30.png)
 
@@ -168,7 +181,7 @@ p = 0.3, then the options are cake and donut since their cumulative probability 
 
 ### Temperature
 
-This parameter influences the shape of the probability distribution that the model calcuates for the next token. I.E. the higher the temperature,
+This parameter influences the shape of the probability distribution that the model calculates for the next token. I.E. the higher the temperature,
 the higher the randomness. The lower the temperature, the lower the randomness. 
 
 Temperature value is a scaling factor that is applied via the final softmax layer that impacts the shape of the probability distribution of the 
