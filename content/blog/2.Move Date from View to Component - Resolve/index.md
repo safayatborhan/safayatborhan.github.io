@@ -1,8 +1,8 @@
 +++
 author = "Safayat Borhan"
 title = "Move Data from View to Component - Resolve"
-date = "2025-07-20"
-description = "Move Data Between Components - @Input"
+date = "2025-07-21"
+description = "Move Data from View to Component - Resolve"
 tags = [
     "Angular",
     "Typescript"
