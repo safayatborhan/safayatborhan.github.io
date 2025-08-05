@@ -1,8 +1,8 @@
 +++
 author = "Safayat Borhan"
-title = "Angular Parent Child Communication with (Input) and [Output]"
+title = "Angular Parent Child Communication with Input and Output"
 date = "2025-08-06"
-description = "Angular Parent Child Communication with (Input) and [Output]"
+description = "Angular Parent Child Communication with Input and Output"
 tags = [
     "Angular",
     "Typescript"
