@@ -59,3 +59,20 @@ di-playground.component.html
     <button (click)="signIn()" class="ui button">Sign In</button>
 </div>
 ```
+
+There is a way to inject a value as well. Example:
+
+Into app.component.ts, we can add provider like this:
+```typescript
+providers: [{ provide: "API_URL", useValue: "http://my.api.com/v1" }]
+```
+Now this is injectable to any component. 
+
+di-playground.component.ts
+```typescript
+apiUrl!: string;
+  
+constructor(private userService: UserService, @Inject("API_URL") apiUrl: string) {
+  this.apiUrl = apiUrl;
+}
+```
